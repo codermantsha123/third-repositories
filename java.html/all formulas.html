@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="div"></div>
+   <button onclick="show()">click me</button>
+    <script>
+    
+    let q = 10;
+    let w = 20;
+    let e = q+w;
+    document.write(e+"<br>");
+
+    let q1 = 10;
+    let w1 = 20;
+    let e1 = q1-w1;
+    document.write(e1+"<br>");
+
+    let q2 = 10;
+    let w2 = 20;
+    let e2 = q2*w2;
+    document.write(e2+"<br>");
+
+    let q3 = 10;
+    let w3 = 20;
+    let e3 = q3/w3;
+    document.write(e3+"<br>");
+   
+    let q6 = 10;
+    let w6 = 20;
+    let e6 = q6%w6;
+    document.write(e6+"<br>");
+
+
+    let q4 = 10;
+    let w4 = 20;
+    let e4 = q4==w4;
+    document.write(e4+"<br>");
+
+
+    let q5 = 10;
+    let w5 = 20;
+    let e5 = q5!=w5;
+    document.write(e5+"<br>");
+   
+    let a = 10;
+    let b =  a++;
+    
+    document.write(a+"<br>");
+
+    let a1 = 10;
+    let b1 =  a1--;
+    
+    document.write(a1+"<br>");
+
+    let x = 10;
+    let y = 20;
+    let z = x>y;
+    document.write(z+"<br>");
+
+    let x1 = 10;
+    let y1 = 20;
+    let z1 = x1<y1;
+    document.write(z1+"<br>");
+
+    let x2 = 10;
+    let y2= 20;
+    let z2 = x2>=y2;
+    document.write(z2+"<br>");
+
+    let x3 = 10;
+    let y3= 20;
+    let z3 = x3<=y3;
+    document.write(z3+"<br>");
+
+    let name = "priya";
+        let age = 18;
+        let clss = "12th";
+        let hin = 50;
+        let eng = 60;
+        let math = 67;
+        let sst = 45;
+        let sci = 47;
+        let total = hin+eng+math+sst+sci;
+        let per = total/5;
+        document.write("Name :"+name+"<br>"+"Age :"+age+"<br>"+"Class :"+clss+"<br>"+"Hindi :"+hin+"<br>"+
+            "English :"+eng+"<br>"+"Math :"+math+"<br>"+"Sst :"+sst+"<br>"+"Science :"+sci+"<br>"+"Total :"+
+            total+"<br>"+"Percentage : "+per+"<br>"
+        );
+
+        if(per>=33){
+            document.write("Result : pass <br>");
+        }else(
+            document.write("Result fail <br>")
+        )
+
+        if(per>=90){
+            document.write("Grade : A <br>")
+        }else if(per>=80){
+            document.write("Grade : B <br>");
+        }else if(per>=70){
+            document.write("Grade : C <br>");
+        }else if(per>=60){
+            document.write("Grade : D <br>");
+        }else{
+            document.write("Grade : E <br> <br>");
+        }
+
+        function sum(){
+    let x = 10;
+    let y = 20;
+    let z = x+y;
+    document.write("sum :"+z+"<br>");
+ }
+ sum();
+ function sub(){
+    let x = 10;
+    let y = 20;
+    let z = x-y;
+    document.write("sub :"+z+"<br>");
+ }
+ sub();
+ function mul(){
+    let x = 10;
+    let y = 20;
+    let z = x*y;
+    document.write("mul :"+z+"<br> ");
+ }
+ mul();
+
+ function dev(){
+    let x = 10;
+    let y = 20;
+    let z = x/y;
+    document.write("dev"+z+"<br><br>");
+ }
+ dev();
+
+ function student(name,age,clss,hin,eng,math,sst,sci,total){
+    document.write("Name :"+name+"<br>"+"Age :"+age+"<br>"+"Class :"+clss+"<br>"+"Hindi :"+hin+"<br>"+"English :"+
+   eng+"<br>"+"Math :"+math+"<br>"+"Sst : "+sst+"<br>"+"Science :"+sci+"<br>"+"Total :"+total+"<br> <br>"
+ );
+ }
+ student("priya",20,"12th",50,70,50,60,75,50+70+50+60+75);
+
+ 
+ let d = 1;
+        while(d<=10){
+            document.write(d+"<br>");
+            d++;
+
+        }
+
+        let y4 = 1;
+        do{
+            document.write(y4+"<br>");
+            y4++;
+        }while(y4<=10);
+          
+
+        for(let a = 1;a<=10;a++){
+            document.write(a+"<br>");
+        }
+
+        let b5 = 10;
+        while(b5>=1){
+            document.write(b5+"<br>");
+            b5--;
+        }
+
+
+        let c = 1;
+        while(c<=10){
+            document.write(2*
+            c+"<br>");
+            c++;
+
+        }
+
+        let arr = [10,20,30,40];
+     document.write(arr[0]+" ");
+     document.write(arr[1]+" ");
+     document.write(arr[2]+" ");
+     document.write(arr[3]+"<br>");
+
+     let arr1 = [1,2,3,4];
+     arr1.forEach((i)=>{
+        document.write(i+"<br>");
+     })
+     let arr2 = ["Priya","Riya","Jiya","Lisa"];
+     arr2.forEach((i)=>{
+        document.write(i+"<br>");
+
+     })
+
+
+     let arr3 = ["Fruits : "+"Apple","Banana","Orange","Papaya","Mango"+"<br>"+"Vagetables : "+"Tomato","Brinjal"
+     ,"Carrot","Raddish"+"<br>"+"Color : "+"Pink","Black","Orange","Blue","Purple" ];
+      arr3.forEach((i)=>{
+        document.write(i+" ");
+
+      })
+
+
+      document.querySelector(".box").style.width="200px";
+document.querySelector(".box").style.height="200px";
+document.querySelector(".box").style.backgroundColor="red";
+
+
+let x6 = document.querySelector("#box");
+x6.style.width="200px";
+x6.style.height="200px";
+x6.style.backgroundColor="black";
+x6.style.marginLeft="1200px";
+x6.style.marginTop="200px";
+
+
+  
+   
+    function show(){
+    let x = document.querySelector(".div");
+    x.style.width="100px";
+    x.style.height="100px";
+    x.style.backgroundColor="red";
+
+    }
+
+    
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+  
+
+
+
+
+        
+
+
+
+
+
+     
+   
+    </script>
+</body>
+</html>
